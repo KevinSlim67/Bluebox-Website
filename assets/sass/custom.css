@@ -140,13 +140,25 @@ header * {
 
 /* About / -------------------------------------------------- */
 
-/* Services ------------------------------------------------- */
+/* Capabilities ---------------------------------------------- */
 
 .wpo-service-area .wpo-service-item {
   padding: 30px;
 }
 
-/* Services / ----------------------------------------------- */
+#capabilities .number {
+    font-size: 50px;
+    font-weight: 700;
+    width: 100%;
+    display: block;
+}
+
+#capabilities .wpo-service-item * {
+    text-align: center;
+    color: #595959;
+}
+
+/* Capabilities / -------------------------------------------- */
 
 /* Projects ------------------------------------------------- */
 
