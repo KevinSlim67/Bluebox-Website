@@ -1,0 +1,301 @@
+:root {
+  --primary-text: #595959;
+  --title-text: #0d0845;
+
+  --primary-color: #5fb6d4;
+  --primary-color-rgb: 95, 182, 212;
+
+  --primary-color-dark: #449cb9;
+  --primary-color-dark-rgb: 68, 156, 185;
+
+  --primary-color-light: #77cbe8;
+
+  --secondary-color: #b7b7b7;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Title ------------------------------------------------- */
+
+.wpo-section-title.left {
+  text-align: left;
+}
+
+@media (max-width: 994px) {
+    .wpo-section-title.left {
+        text-align: center;
+      }
+}
+
+.wpo-section-title {
+  margin-bottom: 45px;
+}
+
+.wpo-section-title h2,
+.wpo-section-title-s2 h2,
+.wpo-section-title-s3 h2 {
+  font-size: 40px;
+}
+
+/* Title / ----------------------------------------------- */
+
+/* Buttons ----------------------------------------------- */
+
+.theme-btn:hover {
+  background-color: var(--secondary-color) !important;
+}
+
+/* Buttons / --------------------------------------------- */
+
+/* Navbar ------------------------------------------------ */
+
+header * {
+  color: black !important;
+}
+
+.navbar.sticky-header {
+    color: black !important;
+}
+
+.navbar:not(.sticky-header) * {
+    color: white !important;
+}
+
+.wpo-header-style-2 .navigation.sticky-on,
+.wpo-header-style-3 .navigation.sticky-on,
+.wpo-header-style-4 .navigation.sticky-on {
+  background-color: white;
+}
+
+:not(.sticky-header) .navbar-header .navbar-brand img {
+  height: 65px;
+  filter: grayscale(1) brightness(0) invert(1);
+}
+
+.sticky-header .navbar-header .navbar-brand img {
+  height: 65px;
+  filter: unset !important;
+}
+
+.wpo-site-header #navbar > ul > li > a {
+  height: 80px !important;
+  padding-block: 0;
+  display: flex;
+  align-items: center;
+}
+
+.wpo-header-style-3 #navbar {
+  justify-content: end;
+}
+
+/* Navbar /----------------------------------------------- */
+
+/* Hero -------------------------------------------------- */
+
+.static-hero-s3 {
+  position: relative;
+  background-image: url(./../img/backgrounds/4.jpg);
+  height: 100vh;
+}
+
+.static-hero-s3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.static-hero-s3 h1 {
+  color: white;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+}
+
+/* Hero / --------------------------------------------------- */
+
+/* About ---------------------------------------------------- */
+
+#about {
+  background-color: white;
+}
+
+#about p,
+#about a {
+  color: var(--primary-text);
+}
+
+#about .wpo-about-title * {
+  color: var(--title-text);
+}
+
+#about .theme-btn {
+  color: white;
+}
+
+/* About / -------------------------------------------------- */
+
+/* Services ------------------------------------------------- */
+
+.wpo-service-area .wpo-service-item {
+  padding: 30px;
+}
+
+/* Services / ----------------------------------------------- */
+
+/* Projects ------------------------------------------------- */
+
+.projects h3 a {
+  font-size: 30px;
+  color: white;
+  line-height: 40px;
+}
+
+.projects .wpo-project-img {
+  height: 500px;
+}
+
+.projects .wpo-project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Projects ------------------------------------------------- */
+
+/* Separator 1 ---------------------------------------------- */
+
+.parallax-section {
+  position: relative;
+  height: 400px; /* Set the desired height of the parallax section */
+  background: url("./../img/backgrounds/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.parallax-section * {
+  z-index: 10;
+  color: white;
+}
+
+.parallax-content {
+  text-align: center;
+  color: #fff;
+  padding: 120px 0; /* 120px vertical padding */
+}
+
+.parallax-content h1 {
+  font-size: 36px;
+}
+
+.parallax-content p {
+  font-size: 18px;
+}
+
+/* Separator 1 / -------------------------------------------- */
+
+/* Team ----------------------------------------------------- */
+.wpo-team-img {
+  background-color: rgb(231, 231, 231);
+  border-radius: 1px !important;
+}
+
+.wpo-team-img img {
+  mix-blend-mode: multiply;
+  border-radius: 1px !important;
+}
+
+.wpo-team-text span {
+  color: var(--primary-color) !important;
+}
+
+#team .owl-nav button {
+    display: none;
+}
+
+/* Team / --------------------------------------------------- */
+
+
+
+/* Separator 2 ---------------------------------------------- */
+
+.separator2 {
+  background-image: url(./../img/backgrounds/5.jpg);
+  padding-block: 120px;
+}
+
+.separator2::before {
+  background: black;
+  opacity: 0.7;
+}
+
+/* Separator 2 / -------------------------------------------- */
+
+
+
+/* Separator 2 / -------------------------------------------- */
+
+.wpo-testimonial-area .wpo-testimonial-wrap .wpo-testimonial-item {
+    background: white !important;
+}
+
+/* Separator 2 / -------------------------------------------- */
+
+
+
+/* Contact -------------------------------------------------- */
+
+.wpo-contact-pg-section .wpo-contact-form-area {
+  margin: 0;
+  box-shadow: unset !important;
+  background-color: rgb(250, 250, 250);
+  padding-block: 70px;
+}
+
+#contact .img-container {
+  width: 100%;
+  height: 100%;
+}
+
+#contact .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#contact textarea {
+  resize: none;
+}
+
+/* Contact / ----------------------------------------------- */
+
+/* Footer  ------------------------------------------------- */
+
+footer {
+  background-color: black !important;
+}
+
+footer::before {
+  opacity: 1 !important;
+}
+
+/* Footer / ------------------------------------------------ */
